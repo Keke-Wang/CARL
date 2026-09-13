@@ -1,0 +1,9 @@
+{
+  "base_url": "https://REPLACE_WITH_PROVIDER_ENDPOINT/v1",
+  "model": "REPLACE_WITH_FROZEN_JUDGE_MODEL",
+  "api_key_env": "JUDGE_API_KEY",
+  "temperature": 0.0,
+  "max_tokens": 600,
+  "timeout_seconds": 90,
+  "retries": 4
+}

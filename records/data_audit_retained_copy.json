@@ -1,0 +1,44 @@
+{
+  "overlap_with_train": {
+    "test": {
+      "normalized_inputs": 4,
+      "normalized_triples": 0
+    },
+    "valid": {
+      "normalized_inputs": 2,
+      "normalized_triples": 0
+    }
+  },
+  "splits": {
+    "test": {
+      "normalized_duplicate_inputs": 0,
+      "normalized_duplicate_triples": 0,
+      "rows": 2000,
+      "sha256": {
+        "ctx": "92d45f4c5bdaff3af3bc87a78418390e0a7575f79a79312382da4abdc6dd307b",
+        "src": "788760bb8f8ccaaa820070bbdd9ee325545c7659965ce849752c96e560a9c052",
+        "tgt": "a050e433a9044f28e268e60f8728317d1befcc4c4980c5e029ef6440d12f319e"
+      }
+    },
+    "train": {
+      "normalized_duplicate_inputs": 14,
+      "normalized_duplicate_triples": 1,
+      "rows": 34554,
+      "sha256": {
+        "ctx": "b3fd63d8cb0ca5a05ecef989307840d021d0779cb6fbcb74f4ffdd54e8d6802a",
+        "src": "fd7d420cd22ca3a7e64792821e81b839d1b1f4300ef31aea36924215690add46",
+        "tgt": "5a3662aa96d46fc85317ea656af08e85908b9ad65b242ae4c0868af8fed2a731"
+      }
+    },
+    "valid": {
+      "normalized_duplicate_inputs": 0,
+      "normalized_duplicate_triples": 0,
+      "rows": 2000,
+      "sha256": {
+        "ctx": "743ac89f603bd986aff0ac3e7142fc53251251344ffdf67dceea08f9f3a30d96",
+        "src": "0a322d7498093283051cc3b41f7d27e7fe1bf8436796af080dd0672b05cd28cf",
+        "tgt": "19a4ed4b59dc71bedc3280438ef77989b854a7f3b49f6a03ac3a07eaa3552cb9"
+      }
+    }
+  }
+}

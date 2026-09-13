@@ -1,0 +1,9 @@
+{
+  "base_url": "https://REPLACE_WITH_PROVIDER/v1",
+  "model": "REPLACE_WITH_EXACT_MODEL_ID",
+  "api_key_env": "PROVIDER_API_KEY",
+  "temperature": 0.0,
+  "max_tokens": 128,
+  "timeout_seconds": 90,
+  "retries": 4
+}

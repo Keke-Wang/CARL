@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carl-mt-repro"
+version = "0.5.1"
+description = "Anonymous CARL implementation for context-aware short-text translation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "numpy>=1.24,<3",
+  "sacrebleu>=2.4,<3",
+  "torch>=2.1,<3",
+  "transformers>=4.44,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+carl-train = "carl_mt.cli_train:main"
+carl-evaluate = "carl_mt.cli_evaluate:main"
+carl-compare = "carl_mt.cli_compare:main"
+carl-audit-data = "carl_mt.cli_audit_data:main"
+carl-llm-generate = "carl_mt.cli_llm_generate:main"
+carl-llm-judge = "carl_mt.cli_llm_judge:main"
+carl-llm-judge-summarize = "carl_mt.cli_llm_judge_summarize:main"
+carl-score = "carl_mt.cli_score:main"
+carl-make-matrix = "carl_mt.cli_make_matrix:main"
+carl-filter-overlap = "carl_mt.cli_filter_overlap:main"
+carl-summarize = "carl_mt.cli_summarize:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
